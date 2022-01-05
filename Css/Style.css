@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: rgba(151, 231, 33);
+    --box-shadow:#ccc;
+    --font-color:#000;
+    --white-color:#fff;
+
+    --font-small:0.5rem;
+    --font-medium:0.8rem;
+    --font-md:1.3rem;
+    --font-large:1.4rem;
+    --font-larger:2rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7rem;
+    position: relative;
+    box-shadow: 1px 1px 10px var(--box-shadow);
+}
+/* Logo Brand */
+header .logo__brand a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: var(--font-large);
+}
+
+/* Dark Mode*/
+.Dark__mode{
+    position: absolute;
+    right: 23rem;
+    top: 1.8rem;
+    font-size: var(--font-md);
+    background: transparent;
+    border: none;
+}
+.Dark__mode a{
+    color: var(--font-color);
+}
+
+/* Menu */
+nav > a{
+    text-decoration: none;
+    color: var(--font-color);
+    margin-left: 15px;
+}
+nav{
+    padding-top:5px;
+}
+
+/* Hero Banner */
+.hero__banner{
+    background-image: linear-gradient(
+      rgba(151, 231, 33, 0.8),
+      rgba(187, 255, 49, 0.8)
+    ),
+    url(../image/Wed\ Designer.jpg);
+    background-size: cover;
+    background-position: center;
+    height:400px;
+    position: relative;
+    box-shadow: 1px 1px 10px var(--box-shadow);
+}
+.hero__content {
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 35%;
+}
+
+/* Hero Text */
+
+.hero__text {
+    font-size: var(--font-larger);
+    color:var(--white-color);
+}
+
+/* Hero Btn */
+.btn {
+    margin-top: 75px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.7s ease;
+    box-shadow: 1px 1px 10px var(--box-shadow);
+}
+
+.btn:hover{
+  transform: translateY(-15px);
+  color: var(--main-color);
+
+}
